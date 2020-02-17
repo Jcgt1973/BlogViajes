@@ -6,4 +6,3 @@ blogviajes - Inicio
             "@media (min-width: $1) {\n\t$0\n}"
         ]
     }
-}
