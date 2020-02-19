@@ -1,13 +1,17 @@
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 img {
     max-width: 100%;
 }
@@ -29,9 +33,11 @@ p {
     font-size: 18px;
     transition: background-color .3s ease-in-out;
 }
+
 .boton:hover {
     background-color: #01718d;
 }
+
 .site-header {
     padding: 20px 0 20px 0;
 }
@@ -40,17 +46,21 @@ p {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .clearfix::after {
     content: '';
     clear: both;
     display: block;
 }
 
+
 /* Navegacion */
+
 .barra {
     background-color: #db00db;
     margin-top: 40px;
 }
+
 .navegacion-principal a {
     color: #ffffff;
     text-decoration: none;
@@ -59,46 +69,55 @@ p {
     text-align: center;
     padding: 20px;
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
     .navegacion-principal a {
         display: inline-block;
         margin-right: 20px;
     }
 }
+
 .navegacion-principal a:hover {
     background-color: #00b8e4;
 }
 
+
 /* Contenedores Principales */
+
 .contenido-principal {
     margin-top: 40px;
 }
+
 .contenido-principal,
 .sidebar {
     padding: 20px;
 }
+
 @media (min-width: 768px) {
     .contenido-principal {
-    width: 70%;
-    float: left;
-    padding-right: 0 60px 0 0;
+        width: 70%;
+        float: left;
+        padding-right: 0 60px 0 0;
     }
-
     .sidebar {
-    width: 30%;
-    float: right;
-    margin-top: 40px;
+        width: 30%;
+        float: right;
+        margin-top: 40px;
     }
 }
 
+
 /* Entradas de Blog */
+
 h2 {
     color: #00b8e4;
     margin-bottom: 20px;
 }
+
 .entrada {
     margin-bottom: 60px;
 }
+
 .entrada:last-of-type {
     margin-bottom: 0px;
 }
@@ -106,6 +125,7 @@ h2 {
 .entrada img {
     display: block;
 }
+
 @media (min-width: 480px) {
     .entrada img {
         width: 300px;
@@ -113,18 +133,21 @@ h2 {
         margin: 0 30px 0 0;
     }
 }
+
 .entrada p {
     text-align: justify;
 }
 
+
 /* Sidebar */
+
 .sidebar ul {
     list-style: none;
     padding: 0;
 }
 
 .sidebar ul li {
-   padding: 10px;
+    padding: 10px;
 }
 
 .sidebar ul li:hover {
@@ -141,19 +164,47 @@ h2 {
     color: #ffffff;
 }
 
+
 /* footer  */
+
 .footer-sitio {
     background-color: #db00db;
     padding-top: 40px;
     margin-top: 60px;
     color: #ffffff;
+    text-align: center;
 }
 
-.footer-sitio h2{
-    color: #ffffff ;
+.footer-sitio h2 {
+    color: #ffffff;
 }
 
 .footer-sitio a {
     color: #ffffff;
     text-decoration: none;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.footer-sitio a:last-of-type {
+    margin-right: 0px;
+}
+
+@media (min-width: 768px) {
+    .footer-sitio .nosotros {
+        float: left;
+        width: 30%;
+        text-align: left;
+    }
+    .footer-sitio .menu {
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+}
+
+.copyright {
+    background-color: #b10474;
+    margin: 50px 0 0 0;
+    padding: 20px 0;
 }
